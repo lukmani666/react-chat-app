@@ -1,0 +1,23 @@
+.message {
+    max-width:;
+}
+
+.p_text {
+    padding: 10px 20px;
+    border-radius: 0 10px 10px 10px;
+    
+}
+
+.owner {
+   flex-direction: row-reverse;
+}
+
+.p_owner {
+    background: #8da4f1;
+    color: #fff;
+    border-radius: 10px 0 10px 10px;
+}
+
+.msg_owner {
+    align-items: flex-end;
+}

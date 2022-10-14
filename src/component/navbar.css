@@ -1,0 +1,7 @@
+.nav_btn {
+    transition: all 400ms ease;
+}
+.nav_btn:hover {
+    background: transparent;
+    border: 1px solid #5d5b8d;
+}
