@@ -42,7 +42,7 @@ const Login = () => {
           </button>
           {err && <span className='text-red-500'>Something went wrong</span>}
         </form>
-        <p className="text-center text-[#5d5b8d] mt-5">You don't have an account? <Link to="/register">Register</Link></p>
+        <p className="text-center text-[#5d5b8d] mt-5">You don't have an account? <Link className='text-blue-500' to="/register">Register</Link></p>
       </div>
     </div>
   )

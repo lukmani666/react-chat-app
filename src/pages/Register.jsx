@@ -84,7 +84,7 @@ const Register = () => {
           </button>
           {err && <span className='text-red-500'>Something went wrong</span>}
         </form>
-        <p className="text-center text-[#5d5b8d] mt-5">You do have an account? <Link to="/login">Login</Link></p>
+        <p className="text-center text-[#5d5b8d] mt-5">You do have an account? <Link className='text-blue-500' to="/login">Login</Link></p>
       </div>
     </div>
   )
