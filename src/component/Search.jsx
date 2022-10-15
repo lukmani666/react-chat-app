@@ -5,6 +5,7 @@ import { collection, doc, query,
 } from 'firebase/firestore'
 import { db } from '../firebase'
 import { AuthContext } from '../context/AuthContext'
+import { FaSearch } from 'react-icons/fa'
 
 const Search = () => {
 
@@ -32,9 +33,9 @@ const Search = () => {
     
   }
 
-  const handleKey = (e) => {
-    e.code === ("Enter" || "Next") && handleSearch();
-  };
+  const searchHandler = () => {
+    handleSearch();
+  }
 
   const handleSelect = async () => {
     //check whether the group (chats in firestore) exists, if not create
@@ -77,13 +78,15 @@ const Search = () => {
     setUser(null);
     setUsername("");
   };
+
   return (
     <div className='search_container'>
-      <div className="search_form">
-        <input onKeyDown={handleKey} onChange={e => setUsername(e.target.value)} type="text" placeholder='Find a user'
+      <div className="search_form flex items-center">
+        <input onChange={e => setUsername(e.target.value)} type="text" placeholder='Find a user'
           className='w-full border-none outline-none
           text-lg text-[#ddddf7] bg-transparent p-2' value={username}
         />
+        <FaSearch onClick={searchHandler} className='text-[#ddddf7] text-2xl mr-1 font-bold cursor-pointer md:mr-4 lg:mr-4' />
       </div>
       {err && <span className='text-red-500 pl-2'>User not found!</span>}
       {user &&<div className="user_chat hover:bg-[#2f2d52] cursor-pointer pt-2 pl-2 pb-2 flex gap-2" onClick={handleSelect}>
