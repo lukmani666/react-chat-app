@@ -33,7 +33,7 @@ const Search = () => {
   }
 
   const handleKey = (e) => {
-    e.code === "Enter" && handleSearch();
+    e.code === ("Enter" || "Go") && handleSearch();
   };
 
   const handleSelect = async () => {
