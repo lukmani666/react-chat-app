@@ -30,8 +30,8 @@ body{
 }
 
 .regiter_container {
-   background: var(--color-white);
-   padding: 2rem;
+    background: var(--color-white);
+   
    border-radius: 1rem;
 }
 

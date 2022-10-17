@@ -67,7 +67,7 @@ const Register = () => {
 
   return (
     <div className='bg-[#a7bcff] h-screen flex items-center justify-center'>
-      <div className="regiter_container flex flex-col w-11/12 md:w-8/12 lg:w-4/12">
+      <div className="regiter_container p-6 flex flex-col w-11/12 md:w-8/12 md:p-10 lg:w-4/12 lg:p-10">
         <span className="logo text-center">Ola_Dev Chat</span>
         <span className="title text-center">Register</span>
         <form onSubmit={handleSubmit} className='flex flex-col gap-4'>
@@ -75,11 +75,11 @@ const Register = () => {
           <input type="text" placeholder='email'className='sign_input'/>
           <input type="password" placeholder='password' className='sign_input'/>
           <input style={{display:"none"}} type="file" id='file' />
-          <label htmlFor="file" className='text-[#a7bcff] flex items-center gap-2'>
+          <label htmlFor="file" className='text-[#a7bcff] flex items-center mt-2 gap-2'>
             <img src={Img1} alt="" className='w-6 h-6 cursor-pointer'/>
             <p>Add image</p>
           </label>
-          <button className="btn">
+          <button className="btn mt-2">
             <span>Sign up</span>
           </button>
           {err && <span className='text-red-500'>Something went wrong</span>}
