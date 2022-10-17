@@ -67,7 +67,7 @@ const Register = () => {
 
   return (
     <div className='bg-[#a7bcff] h-screen flex items-center justify-center'>
-      <div className="regiter_container p-6 flex flex-col w-11/12 md:w-8/12 md:p-10 lg:w-4/12 lg:p-10">
+      <div className="regiter_container py-6 px-2 flex flex-col w-11/12 md:w-8/12 md:p-10 lg:w-4/12 lg:p-10">
         <span className="logo text-center">Ola_Dev Chat</span>
         <span className="title text-center">Register</span>
         <form onSubmit={handleSubmit} className='flex flex-col gap-4'>
