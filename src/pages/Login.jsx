@@ -30,8 +30,8 @@ const Login = () => {
 
   return (
     <div className='bg-[#a7bcff] h-screen flex items-center justify-center'>
-      <div className="bg-[#fff] px-2 py-10 rounded-2xl flex flex-col h-fit 
-        w-11/12 md:w-8/12 md:p-10 h-fit lg:w-4/12 lg:h-fit lg:p-10">
+      <div className="bg-[#fff] flex flex-col p-2 justify-center h-full 
+        w-full md:w-8/12 md:p-10 md:h-fit md:rounded-2xl lg:w-4/12 lg:rounded-2xl lg:h-fit lg:p-10">
         <span className="logo text-center">Ola_Dev Chat</span>
         <span className="title text-center">Login</span>
         <form onSubmit={handleSubmit} className='flex flex-col gap-4'>

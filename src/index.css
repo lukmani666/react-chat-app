@@ -31,8 +31,6 @@ body{
 
 .regiter_container {
     background: var(--color-white);
-   
-   border-radius: 1rem;
 }
 
 .sign_input {
