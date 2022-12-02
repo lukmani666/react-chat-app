@@ -72,7 +72,7 @@ const Register = () => {
         <span className="title text-center">Register</span>
         <form onSubmit={handleSubmit} className='flex flex-col gap-4'>
           <input type="text" placeholder='Enter your name' className='sign_input'/>
-          <input type="text" placeholder='email'className='sign_input'/>
+          <input type="text" placeholder='example@gmail.com'className='sign_input'/>
           <input type="password" placeholder='password' className='sign_input'/>
           <input style={{display:"none"}} type="file" id='file' />
           <label htmlFor="file" className='text-[#a7bcff] flex items-center mt-2 gap-2'>

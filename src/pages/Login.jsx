@@ -35,7 +35,7 @@ const Login = () => {
         <span className="logo text-center">Ola_Dev Chat</span>
         <span className="title text-center">Login</span>
         <form onSubmit={handleSubmit} className='flex flex-col gap-4'>
-          <input type="text" placeholder='email' className='sign_input mt-2'/>
+          <input type="text" placeholder='example@gmail.com' className='sign_input mt-2'/>
           <input type="password" placeholder='password' className='sign_input mt-2'/>
           <button className="btn mt-4">
           <span>Sign in</span>
